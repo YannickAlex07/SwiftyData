@@ -26,7 +26,7 @@ final class IntegerTests: XCTestCase {
         XCTAssertEqual(dataInUInt8, sampleDataInUInt8)
         
         //Convert data back to Int
-        var converted: Int = Int(data)
+        let converted = Int(data)
         
         //Check if data equals given Int
         XCTAssertEqual(converted, sample)
@@ -52,7 +52,7 @@ final class IntegerTests: XCTestCase {
         XCTAssertEqual(dataInUInt8, sampleDataInUInt8)
         
         //Convert data back to Int
-        var converted: Int = Int(data)
+        let converted = Int(data)
         
         //Check if data equals given Int
         XCTAssertEqual(converted, sample)
@@ -78,7 +78,7 @@ final class IntegerTests: XCTestCase {
         XCTAssertEqual(dataInUInt8, sampleDataInUInt8)
         
         //Convert data back to UInt
-        var converted: UInt = UInt(data)
+        let converted = UInt(data)
         
         //Check if data equals given UInt
         XCTAssertEqual(converted, sample)
@@ -106,7 +106,7 @@ final class IntegerTests: XCTestCase {
         XCTAssertEqual(dataInUInt8, sampleDataInUInt8)
         
         //Convert data back to Int32
-        var converted: Int32 = Int32(data)
+        let converted = Int32(data)
         
         //Check if data equals given Int32
         XCTAssertEqual(converted, sample)
@@ -132,7 +132,7 @@ final class IntegerTests: XCTestCase {
         XCTAssertEqual(dataInUInt8, sampleDataInUInt8)
         
         //Convert data back to Int32
-        var converted: Int32 = Int32(data)
+        let converted = Int32(data)
         
         //Check if data equals given Int32
         XCTAssertEqual(converted, sample)
@@ -158,7 +158,7 @@ final class IntegerTests: XCTestCase {
         XCTAssertEqual(dataInUInt8, sampleDataInUInt8)
         
         //Convert data back to UInt32
-        var converted: UInt32 = UInt32(data)
+        let converted = UInt32(data)
         
         //Check if data equals given UInt32
         XCTAssertEqual(converted, sample)
@@ -186,7 +186,7 @@ final class IntegerTests: XCTestCase {
         XCTAssertEqual(dataInUInt8, sampleDataInUInt8)
         
         //Convert data back to Int16
-        var converted: Int16 = Int16(data)
+        let converted = Int16(data)
         
         //Check if data equals given Int16
         XCTAssertEqual(converted, sample)
@@ -212,7 +212,7 @@ final class IntegerTests: XCTestCase {
         XCTAssertEqual(dataInUInt8, sampleDataInUInt8)
         
         //Convert data back to Int16
-        var converted: Int16 = Int16(data)
+        let converted = Int16(data)
         
         //Check if data equals given Int16
         XCTAssertEqual(converted, sample)
@@ -238,7 +238,7 @@ final class IntegerTests: XCTestCase {
         XCTAssertEqual(dataInUInt8, sampleDataInUInt8)
         
         //Convert data back to UInt16
-        var converted: UInt16 = UInt16(data)
+        let converted = UInt16(data)
         
         //Check if data equals given UInt16
         XCTAssertEqual(converted, sample)
@@ -256,7 +256,7 @@ final class IntegerTests: XCTestCase {
         XCTAssertEqual(data.first!, sample)
         
         //Convert data back to Int8
-        var converted = Int8(data)
+        let converted = Int8(data)
         
         //Check if converted Int8 equals the given sample Int8
         XCTAssertEqual(converted, sample)
@@ -272,7 +272,7 @@ final class IntegerTests: XCTestCase {
         XCTAssertEqual(data.first!, sample)
         
         //Convert data back to Int8
-        var converted = Int8(data)
+        let converted = Int8(data)
         
         //Check if converted Int8 equals the given sample Int8
         XCTAssertEqual(converted, sample)
@@ -288,7 +288,7 @@ final class IntegerTests: XCTestCase {
         XCTAssertEqual(data.first!, sample)
         
         //Convert data back to UInt8
-        var converted = Int8(data)
+        let converted = Int8(data)
         
         //Check if converted Int8 equals the given sample UInt8
         XCTAssertEqual(converted, sample)

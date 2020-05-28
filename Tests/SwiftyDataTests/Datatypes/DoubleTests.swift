@@ -27,7 +27,7 @@ final class DoubleTests: XCTestCase {
         XCTAssertEqual(dataInUInt8, sampleDataInUInt8)
         
         //Convert data back to Double
-        let converted: Double = Double(data)!
+        let converted = Double(data)
         
         //Check if data equals given Double
         XCTAssertEqual(converted, sample)
@@ -54,7 +54,7 @@ final class DoubleTests: XCTestCase {
         XCTAssertEqual(dataInUInt8, sampleDataInUInt8)
         
         //Convert data back to Double
-        let converted: Double = Double(data)!
+        let converted = Double(data)
         
         //Check if data equals given Double
         XCTAssertEqual(converted, sample)
