@@ -248,12 +248,13 @@ final class IntegerTests: XCTestCase {
     //MARK: - Int8 (8 Bit -> 1 Byte)
     func testInt8Conversion() {
         let sample: Int8 = 78
+        let sampleDataInUInt8: UInt8 = 78
         
         //Convert Int8 to data
         let data = Data(sample)
         
         //Check if first byte of data equals the sample
-        XCTAssertEqual(data.first!, sample)
+        XCTAssertEqual(data.first!, sampleDataInUInt8)
         
         //Convert data back to Int8
         let converted = Int8(data)
@@ -264,12 +265,13 @@ final class IntegerTests: XCTestCase {
     
     func testNegativeInt8Conversion() {
         let sample: Int8 = -78
+        let sampleDataInUInt8: UInt8 = 216
         
         //Convert Int8 to data
         let data = Data(sample)
         
         //Check if first byte of data equals the sample
-        XCTAssertEqual(data.first!, sample)
+        XCTAssertEqual(data.first!, sampleDataInUInt8)
         
         //Convert data back to Int8
         let converted = Int8(data)
@@ -288,7 +290,7 @@ final class IntegerTests: XCTestCase {
         XCTAssertEqual(data.first!, sample)
         
         //Convert data back to UInt8
-        let converted = Int8(data)
+        let converted = UInt8(data)
         
         //Check if converted Int8 equals the given sample UInt8
         XCTAssertEqual(converted, sample)
