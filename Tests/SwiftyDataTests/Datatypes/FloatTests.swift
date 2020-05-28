@@ -27,7 +27,7 @@ final class FloatTests: XCTestCase {
         XCTAssertEqual(dataInUInt8, sampleDataInUInt8)
         
         //Convert data back to Float
-        var converted: Float = Float(data)
+        let converted: Float = Float(data)!
         
         //Check if data equals given Float
         XCTAssertEqual(converted, sample)
@@ -53,7 +53,7 @@ final class FloatTests: XCTestCase {
         XCTAssertEqual(dataInUInt8, sampleDataInUInt8)
         
         //Convert data back to Float
-        var converted: Float = Float(data)
+        let converted: Float = Float(data)!
         
         //Check if data equals given Float
         XCTAssertEqual(converted, sample)
@@ -83,7 +83,7 @@ final class FloatTests: XCTestCase {
         XCTAssertEqual(dataInUInt8, sampleDataInUInt8)
         
         //Convert data back to Float80
-        var converted: Float80 = Float80(data)
+        let converted: Float80 = Float80(data)!
         
         //Check if data equals given Float80
         XCTAssertEqual(converted, sample)
@@ -110,7 +110,7 @@ final class FloatTests: XCTestCase {
         XCTAssertEqual(dataInUInt8, sampleDataInUInt8)
         
         //Convert data back to Float80
-        var converted: Float80 = Float80(data)
+        let converted: Float80 = Float80(data)!
         
         //Check if data equals given Float80
         XCTAssertEqual(converted, sample)
@@ -140,7 +140,7 @@ final class FloatTests: XCTestCase {
         XCTAssertEqual(dataInUInt8, sampleDataInUInt8)
         
         //Convert data back to Float64
-        var converted: Float64 = Float64(data)
+        let converted: Float64 = Float64(data)!
         
         //Check if data equals given Float64
         XCTAssertEqual(converted, sample)
@@ -166,7 +166,7 @@ final class FloatTests: XCTestCase {
         XCTAssertEqual(dataInUInt8, sampleDataInUInt8)
         
         //Convert data back to Float64
-        var converted: Float64 = Float64(data)
+        let converted: Float64 = Float64(data)!
         
         //Check if data equals given Float64
         XCTAssertEqual(converted, sample)
@@ -195,7 +195,7 @@ final class FloatTests: XCTestCase {
         XCTAssertEqual(dataInUInt8, sampleDataInUInt8)
         
         //Convert data back to Float32
-        var converted: Float32 = Float32(data)
+        let converted: Float32 = Float32(data)!
         
         //Check if data equals given Float32
         XCTAssertEqual(converted, sample)
@@ -221,7 +221,7 @@ final class FloatTests: XCTestCase {
         XCTAssertEqual(dataInUInt8, sampleDataInUInt8)
         
         //Convert data back to Float32
-        var converted: Float32 = Float32(data)
+        let converted: Float32 = Float32(data)!
         
         //Check if data equals given Float32
         XCTAssertEqual(converted, sample)
