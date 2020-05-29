@@ -65,7 +65,7 @@ final class FloatTests: XCTestCase {
     func testFloat80Conversion() {
         let sample: Float80 = 68347.83928839299
         let sampleDataInUInt8: [UInt8] = [248, 230, 83, 205, 109, 235, 125, 133,
-                                          15, 64, 0, 0, 0, 0, 0, 0]
+                                          15, 64, 187, 80, 255, 127, 0, 0]
         
         //Convert Float80 To Data
         let data = Data(sample)
@@ -92,7 +92,7 @@ final class FloatTests: XCTestCase {
     func testNegativeFloat80Conversion() {
         let sample: Float80 = -68347.83928839299
         let sampleDataInUInt8: [UInt8] = [248, 230, 83, 205, 109, 235, 125, 133,
-                                          15, 192, 0, 0, 0, 0, 0, 0]
+                                          15, 192, 187, 80, 255, 127, 0, 0]
         
         //Convert Float80 To Data
         let data = Data(sample)

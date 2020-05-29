@@ -34,7 +34,7 @@ final class IntegerTests: XCTestCase {
     
     func testNegativeIntConversion() {
         let sample: Int = -33949712
-        let sampleDataInUInt8: [UInt8] = [16, 8, 6, 2, 0, 0, 0, 128]
+        let sampleDataInUInt8: [UInt8] = [240, 247, 249, 253, 255, 255, 255, 255]
         
         //Convert Int To Data
         let data = Data(sample)
@@ -88,7 +88,7 @@ final class IntegerTests: XCTestCase {
     //MARK: - Int32 (32 Bit -> 4 Bytes)
     func testInt32Conversion() {
         let sample: Int32 = 45432
-        let sampleDataInUInt8: [UInt8] = [76, 116, 72, 0]
+        let sampleDataInUInt8: [UInt8] = [120, 177, 0, 0]
         
         //Convert Int32 To Data
         let data = Data(sample)
@@ -114,7 +114,7 @@ final class IntegerTests: XCTestCase {
     
     func testNegativeInt32Conversion() {
         let sample: Int32 = -45432
-        let sampleDataInUInt8: [UInt8] = [76, 116, 72, 128]
+        let sampleDataInUInt8: [UInt8] = [136, 78, 255, 255]
         
         //Convert Int32 To Data
         let data = Data(sample)
@@ -194,7 +194,7 @@ final class IntegerTests: XCTestCase {
     
     func testNegativeInt16Conversion() {
         let sample: Int16 = -12767
-        let sampleDataInUInt8: [UInt8] = [223, 177]
+        let sampleDataInUInt8: [UInt8] = [33, 206]
         
         //Convert Int16 To Data
         let data = Data(sample)
@@ -265,7 +265,7 @@ final class IntegerTests: XCTestCase {
     
     func testNegativeInt8Conversion() {
         let sample: Int8 = -78
-        let sampleDataInUInt8: UInt8 = 216
+        let sampleDataInUInt8: UInt8 = 178
         
         //Convert Int8 to data
         let data = Data(sample)
