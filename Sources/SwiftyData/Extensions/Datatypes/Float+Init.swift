@@ -10,7 +10,7 @@ public extension Float {
     }
 }
 
-@available(iOS 11, *)
+#if os(macOS)
 public extension Float80 {
     init?(_ data: Data) {
         //Convert Data and check that it return something else return nil
@@ -18,3 +18,4 @@ public extension Float80 {
         self = value
     }
 }
+#endif
