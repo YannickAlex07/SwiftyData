@@ -2,7 +2,7 @@
 
 import Foundation
 
-extension Double {
+public extension Double {
     init?(_ data: Data) {
         //Convert Data and check that it return something else return nil
         guard let value = Converter.convertToType(Double.self, data) else { return nil }

@@ -2,7 +2,7 @@
 
 import Foundation
 
-extension Bool {
+public extension Bool {
     init?(_ data: Data) {
         //Convert Data and check that it return something else return nil
         guard let value = Converter.convertToType(Bool.self, data) else { return nil }

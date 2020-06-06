@@ -2,7 +2,7 @@
 
 import Foundation
 
-extension Int {
+public extension Int {
     init?(_ data: Data) {
         //Convert Data and check that it return something else return nil
         guard let value = Converter.convertToType(Int.self, data) else { return nil }
@@ -10,7 +10,7 @@ extension Int {
     }
 }
 
-extension UInt {
+public extension UInt {
     init?(_ data: Data) {
         //Convert Data and check that it return something else return nil
         guard let value = Converter.convertToType(UInt.self, data) else { return nil }
@@ -18,7 +18,7 @@ extension UInt {
     }
 }
 
-extension Int64 {
+public extension Int64 {
     init?(_ data: Data) {
         //Convert Data and check that it return something else return nil
         guard let value = Converter.convertToType(Int64.self, data) else { return nil }
@@ -26,7 +26,7 @@ extension Int64 {
     }
 }
 
-extension UInt64 {
+public extension UInt64 {
     init?(_ data: Data) {
         //Convert Data and check that it return something else return nil
         guard let value = Converter.convertToType(UInt64.self, data) else { return nil }
@@ -34,7 +34,7 @@ extension UInt64 {
     }
 }
 
-extension Int32 {
+public extension Int32 {
     init?(_ data: Data) {
         //Convert Data and check that it return something else return nil
         guard let value = Converter.convertToType(Int32.self, data) else { return nil }
@@ -42,7 +42,7 @@ extension Int32 {
     }
 }
 
-extension UInt32 {
+public extension UInt32 {
     init?(_ data: Data) {
         //Convert Data and check that it return something else return nil
         guard let value = Converter.convertToType(UInt32.self, data) else { return nil }
@@ -50,7 +50,7 @@ extension UInt32 {
     }
 }
 
-extension Int16 {
+public extension Int16 {
     init?(_ data: Data) {
         //Convert Data and check that it return something else return nil
         guard let value = Converter.convertToType(Int16.self, data) else { return nil }
@@ -58,7 +58,7 @@ extension Int16 {
     }
 }
 
-extension UInt16 {
+public extension UInt16 {
     init?(_ data: Data) {
         //Convert Data and check that it return something else return nil
         guard let value = Converter.convertToType(UInt16.self, data) else { return nil }
@@ -66,7 +66,7 @@ extension UInt16 {
     }
 }
 
-extension Int8 {
+public extension Int8 {
     init?(_ data: Data) {
         //Convert Data and check that it return something else return nil
         guard let value = Converter.convertToType(Int8.self, data) else { return nil }
@@ -74,7 +74,7 @@ extension Int8 {
     }
 }
 
-extension UInt8 {
+public extension UInt8 {
     init?(_ data: Data) {
         //Convert Data and check that it return something else return nil
         guard let value = Converter.convertToType(UInt8.self, data) else { return nil }
