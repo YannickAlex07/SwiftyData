@@ -2,7 +2,7 @@
 
 import Foundation
 
-extension Float {
+public extension Float {
     init?(_ data: Data) {
         //Convert Data and check that it return something else return nil
         guard let value = Converter.convertToType(Float.self, data) else { return nil }
@@ -10,7 +10,7 @@ extension Float {
     }
 }
 
-extension Float80 {
+public extension Float80 {
     init?(_ data: Data) {
         //Convert Data and check that it return something else return nil
         guard let value = Converter.convertToType(Float80.self, data) else { return nil }
